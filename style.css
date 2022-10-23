@@ -1,0 +1,26 @@
+.grid-container {
+    display: grid;
+    gap: 1em;
+    grid-template-areas: 
+    "side header header"
+    "side main main"
+    "side main main";
+    grid-template-columns: repeat(3,2fr);
+    grid-template-rows: 1fr 1fr 2fr;
+
+}
+.grid-item-1{
+    grid-area: side;
+    background-color: aqua;
+
+}
+.grid-item-2{
+    grid-area: header;
+    background-color: rgb(46, 63, 125);
+
+}
+.grid-item-3{
+    grid-area: main;
+    background-color: rgb(94, 213, 16);
+
+}
